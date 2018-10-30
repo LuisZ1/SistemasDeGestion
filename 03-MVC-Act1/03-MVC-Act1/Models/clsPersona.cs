@@ -25,7 +25,6 @@ namespace _03_MVC_Act1.Models {
             this.nombre = nombre;
             this.apellidos = apellidos;
         }
-
         public String toString() {
             return nombre + apellidos;
         }
