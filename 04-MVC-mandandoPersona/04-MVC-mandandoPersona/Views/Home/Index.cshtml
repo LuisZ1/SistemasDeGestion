@@ -1,0 +1,37 @@
+﻿@model _04_MVC_mandandoPersona.Models.clsPersona
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>vistaFormularioPersona</h2>
+    @using (Html.BeginForm())
+    {
+
+        <label>Nombre</label>
+        <input type="text" name="nombre" value="@Model.nombre"><br>
+
+        <label>Apellidos</label>
+        <input type="text" name="apelidos" value="@Model.apellidos"><br>
+
+        <label>Fecha nacimiento</label>
+        <input type="text" name="fechaNacimiento" value="@Model.fechaNacimiento"><br>
+
+        <label>Direccion</label>
+        <input type="text" name="direccion" value="@Model.direccion"><br>
+
+        <label>Telefono</label>
+        <input type="text" name="telefono" value="@Model.telefono"><br>
+
+        <input type="submit" value="Modificar">
+    }
+</body>
+</html>

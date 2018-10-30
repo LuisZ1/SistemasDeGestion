@@ -1,0 +1,20 @@
+﻿@model _04_MVC_mandandoPersona.Models.clsPersona
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>vistaPersonaModificada</h2>
+    <div>@Html.DisplayFor(persona => persona.nombre)</div>
+    <div>@Html.DisplayFor(persona => persona.apellidos)</div>
+    <div>@Html.DisplayFor(persona => persona.direccion)</div>
+    <div>@Html.DisplayFor(persona => persona.fechaNacimiento)</div>
+    <div>@Html.DisplayFor(persona => persona.telefono)</div>
+</body>
+</html>
+
