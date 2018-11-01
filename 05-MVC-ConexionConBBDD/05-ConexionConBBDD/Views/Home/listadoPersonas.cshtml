@@ -1,4 +1,5 @@
-﻿@model List<_04_MVC_mandandoPersona.Models.clsPersona>
+﻿@model IEnumerable<_04_MVC_mandandoPersona.Models.clsPersona>
+@*@model List<_04_MVC_mandandoPersona.Models.clsPersona>*@
 
 @{
     Layout = null;
@@ -10,6 +11,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>listadoPersonas</title>
+    <h3>Estado:@ViewData["Estado"] <br /></h3>
 </head>
 <body>
     <p>

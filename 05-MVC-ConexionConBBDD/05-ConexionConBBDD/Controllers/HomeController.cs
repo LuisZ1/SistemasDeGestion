@@ -42,7 +42,7 @@ namespace _05_ConexionConBBDD.Controllers {
 
             SqlCommand miComando = new SqlCommand();
             SqlConnection miConexion = new SqlConnection();
-            SqlDataReader miLector = null;
+            SqlDataReader miLector;
 
             clsPersona oPersona;
             List<clsPersona> listadoPersonas = new List<clsPersona>();
@@ -58,7 +58,7 @@ namespace _05_ConexionConBBDD.Controllers {
                 miConexion.Open();
 
                 //Creamos el comando (Creamos el comando, le pasamos la sentencia y la conexion, y lo ejecutamos)
-                miComando.CommandText = "SELECT * FROM [dbo].[Personas]";
+                miComando.CommandText = "SELECT * FROM Personas";
                 miComando.Connection = miConexion;
                 miLector = miComando.ExecuteReader();
 
@@ -67,22 +67,23 @@ namespace _05_ConexionConBBDD.Controllers {
                     while (miLector.Read()) {
                         oPersona = new clsPersona();
                         oPersona.idPersona = (int)miLector["IDPersona"];
-                        oPersona.nombre = (string)miLector["nombre"];
-                        oPersona.apellidos = (string)miLector["apellidos"];
-                        oPersona.fechaNacimiento = (DateTime)miLector["fechaNac"];
+                        oPersona.nombre = (string)miLector["nombrePersona"];
+                        oPersona.apellidos = (string)miLector["apellidosPersona"];
+                        oPersona.fechaNacimiento = (DateTime)miLector["fechaNacimiento"];
                         oPersona.direccion = (string)miLector["direccion"];
                         oPersona.telefono = (string)miLector["telefono"];
                         listadoPersonas.Add(oPersona);
                     }
                 }
-
-            } catch (SqlException exSql) {
-
-            } finally {
                 miLector.Close();
+                ViewData["Estado"] = miConexion.State;
+            } catch (SqlException exSql) {
+                ViewData["Estado"] = exSql.Message;
+            } finally {
                 miConexion.Close();
+                //miLector.Close();
             }
-            return View();
+            return View(listadoPersonas);
         }
     }
 }
