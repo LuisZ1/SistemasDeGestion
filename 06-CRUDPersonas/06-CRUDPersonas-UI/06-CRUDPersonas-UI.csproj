@@ -114,13 +114,13 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\06-CRUDPersonas-BL\06-CRUDPersonas-BL.csproj">
-      <Project>{37685380-a082-48b1-a390-5d242890ade6}</Project>
-      <Name>06-CRUDPersonas-BL</Name>
+    <ProjectReference Include="..\06-CRUDPersonas_BL\06-CRUDPersonas_BL.csproj">
+      <Project>{25ebc7b6-7903-4cc8-9337-71ccb0eece9d}</Project>
+      <Name>06-CRUDPersonas_BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\06-CRUDPersonas-Entidades\06-CRUDPersonas-Entities.csproj">
-      <Project>{b3ee6a7a-541f-437f-96ee-6b513913fdf2}</Project>
-      <Name>06-CRUDPersonas-Entities</Name>
+    <ProjectReference Include="..\06-CRUDPersonas_Entities\06-CRUDPersonas_Entities.csproj">
+      <Project>{e49383ac-1549-402c-8a91-f2331bbbae43}</Project>
+      <Name>06-CRUDPersonas_Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
