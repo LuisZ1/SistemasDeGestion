@@ -111,16 +111,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\06-CRUDPersonas-BL\06-CRUDPersonas-BL.csproj">
       <Project>{37685380-a082-48b1-a390-5d242890ade6}</Project>
       <Name>06-CRUDPersonas-BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\06-CRUDPersonas-Entidades\06-CRUDPersonas-Entidades.csproj">
+    <ProjectReference Include="..\06-CRUDPersonas-Entidades\06-CRUDPersonas-Entities.csproj">
       <Project>{b3ee6a7a-541f-437f-96ee-6b513913fdf2}</Project>
-      <Name>06-CRUDPersonas-Entidades</Name>
+      <Name>06-CRUDPersonas-Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
