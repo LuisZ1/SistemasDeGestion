@@ -5,4 +5,13 @@
     <RootNamespace>_06_CRUDPersonas_DAL</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="management\" />
+    <Folder Include="List\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\06-CRUDPersonas-Entidades\06-CRUDPersonas-Entities.csproj" />
+  </ItemGroup>
+
 </Project>

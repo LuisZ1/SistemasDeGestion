@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>_06_CRUDPersonas_DAL</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\06-CRUDPersonas-Entidades\06-CRUDPersonas-Entidades.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="connections\" />
+    <Folder Include="management\" />
+    <Folder Include="List\" />
+  </ItemGroup>
+
+</Project>
