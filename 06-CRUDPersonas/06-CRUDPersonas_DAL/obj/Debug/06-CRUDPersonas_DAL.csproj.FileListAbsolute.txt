@@ -1,0 +1,9 @@
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Debug\06-CRUDPersonas_DAL.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Debug\06-CRUDPersonas_DAL.pdb
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Debug\06-CRUDPersonas_Entities.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Debug\06-CRUDPersonas_Entities.pdb
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\obj\Debug\06-CRUDPersonas_DAL.csprojAssemblyReference.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\obj\Debug\06-CRUDPersonas_DAL.csproj.CoreCompileInputs.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\obj\Debug\06-CRUDPersonas_DAL.csproj.CopyComplete
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\obj\Debug\06-CRUDPersonas_DAL.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\obj\Debug\06-CRUDPersonas_DAL.pdb

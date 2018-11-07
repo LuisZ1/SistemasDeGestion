@@ -42,7 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="connections\clsMyConnection.cs" />
-    <Compile Include="List\clsListadoPersonas.cs" />
+    <Compile Include="List\clsListadoPersonasDAL.cs" />
+    <Compile Include="management\mngPersonas_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,8 +52,6 @@
       <Name>06-CRUDPersonas_Entities</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="management\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,7 +34,6 @@ namespace _06_CRUDPersonas_DAL.connections
 
         public clsMyConnection()
         {
-            // this.server = "(local)";
             this.server = "serverpersonasdamlz.database.windows.net";
             this.dataBase = "personasDB";
             this.user = "Prueba";

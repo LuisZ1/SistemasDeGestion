@@ -18,13 +18,15 @@ namespace _06_CRUDPersonas_Entities {
 
         public String telefono { get; set; }
 
+        public int idDepartamento { get; set; }
+
 
         #endregion
 
 
         #region constructores
 
-        public clsPersona(int idPersona, String nombre, String apellidos, DateTime fechaNacimiento, String direccion, String telefono) {
+        public clsPersona(int idPersona, String nombre, String apellidos, DateTime fechaNacimiento, String direccion, String telefono, int idDepartamento) {
 
             this.idPersona = idPersona;
             this.nombre = nombre;
@@ -32,6 +34,18 @@ namespace _06_CRUDPersonas_Entities {
             this.fechaNacimiento = fechaNacimiento;
             this.direccion = direccion;
             this.telefono = telefono;
+            this.idDepartamento = idDepartamento;
+
+        }
+
+        public clsPersona(String nombre, String apellidos, DateTime fechaNacimiento, String direccion, String telefono, int idDepartamento) {
+            
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.fechaNacimiento = fechaNacimiento;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.idDepartamento = idDepartamento;
 
         }
 
@@ -43,6 +57,7 @@ namespace _06_CRUDPersonas_Entities {
             this.fechaNacimiento = new DateTime();
             this.direccion = "";
             this.telefono = "";
+            this.idDepartamento = 0;
 
         }
 
