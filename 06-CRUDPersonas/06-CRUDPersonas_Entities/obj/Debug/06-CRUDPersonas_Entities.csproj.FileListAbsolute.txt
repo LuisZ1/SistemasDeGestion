@@ -4,3 +4,9 @@ D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPer
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\obj\Debug\06-CRUDPersonas_Entities.csproj.CoreCompileInputs.cache
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\obj\Debug\06-CRUDPersonas_Entities.dll
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\obj\Debug\06-CRUDPersonas_Entities.pdb
+E:\Documentos\REPOSITORIOS 2018-19\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\bin\Debug\06-CRUDPersonas_Entities.dll
+E:\Documentos\REPOSITORIOS 2018-19\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\bin\Debug\06-CRUDPersonas_Entities.pdb
+E:\Documentos\REPOSITORIOS 2018-19\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\obj\Debug\06-CRUDPersonas_Entities.csprojAssemblyReference.cache
+E:\Documentos\REPOSITORIOS 2018-19\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\obj\Debug\06-CRUDPersonas_Entities.csproj.CoreCompileInputs.cache
+E:\Documentos\REPOSITORIOS 2018-19\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\obj\Debug\06-CRUDPersonas_Entities.dll
+E:\Documentos\REPOSITORIOS 2018-19\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_Entities\obj\Debug\06-CRUDPersonas_Entities.pdb

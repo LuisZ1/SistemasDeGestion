@@ -7,20 +7,26 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace _06_CRUDPersonas_UI.Controllers {
-    public class PersonasController : Controller {
+namespace _06_CRUDPersonas_UI.Controllers
+{
+    public class PersonasController : Controller
+    {
         // GET: Personas
         /// <summary>
         /// devuelve una ñista para rellenar la vista
         /// </summary>
         /// <returns>una lista</returns>
-        public ActionResult listadoCompleto() {
+        public ActionResult listadoCompleto()
+        {
             clsListadoPersonas_BL controller = new clsListadoPersonas_BL();
             List<clsPersona> lista = new List<clsPersona>();
 
-            try {
+            try
+            {
                 lista = controller.listadoCompletoPersonas_BL();
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
@@ -32,14 +38,18 @@ namespace _06_CRUDPersonas_UI.Controllers {
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public ActionResult Delete(int id) {
+        public ActionResult Delete(int id)
+        {
 
             clsPersona persona = new clsPersona();
             mngPersonas_BL manejadoraPersonas = new mngPersonas_BL();
-            try {
+            try
+            {
                 persona = manejadoraPersonas.getPersonoID_BL(id);
-            } catch (Exception) {
-                ViewData ["Error"] = "Excepcion no controlada";
+            }
+            catch (Exception)
+            {
+                ViewData["Error"] = "Excepcion no controlada";
             }
 
             return View(persona);
@@ -50,15 +60,19 @@ namespace _06_CRUDPersonas_UI.Controllers {
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpPost,ActionName("Delete")]
-        public ActionResult DeletePost(int id) {
+        [HttpPost, ActionName("Delete")]
+        public ActionResult DeletePost(int id)
+        {
 
             mngPersonas_BL manejadoraPersonas = new mngPersonas_BL();
             int numberOfDeletes = -2;
-            try {
+            try
+            {
                 numberOfDeletes = manejadoraPersonas.dropPersonoID_BL(id);
                 ViewData["filasAfectadas"] = $"Filas afectadas:{numberOfDeletes}";
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
@@ -66,16 +80,20 @@ namespace _06_CRUDPersonas_UI.Controllers {
             clsListadoPersonas_BL controller = new clsListadoPersonas_BL();
             List<clsPersona> lista = new List<clsPersona>();
 
-            try {
+            try
+            {
                 lista = controller.listadoCompletoPersonas_BL();
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
-            return View("listadoCompleto",lista);
+            return View("listadoCompleto", lista);
         }
 
-        public ActionResult Create() {
+        public ActionResult Create()
+        {
             return View();
         }
 
@@ -85,14 +103,18 @@ namespace _06_CRUDPersonas_UI.Controllers {
         /// <param name="personaAInsertar"></param>
         /// <returns></returns>
         [HttpPost, ActionName("Create")]
-        public ActionResult CreatePost(clsPersona personaAInsertar) {
+        public ActionResult CreatePost(clsPersona personaAInsertar)
+        {
 
             int numberOfRows = -1;
             mngPersonas_BL manejadoraPersonas = new mngPersonas_BL();
-            try {
+            try
+            {
                 numberOfRows = manejadoraPersonas.insertPersona_BL(personaAInsertar);
                 ViewData["filasAfectadas"] = $"Filas afectadas:{numberOfRows}";
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
@@ -100,9 +122,12 @@ namespace _06_CRUDPersonas_UI.Controllers {
             clsListadoPersonas_BL controller = new clsListadoPersonas_BL();
             List<clsPersona> lista = new List<clsPersona>();
 
-            try {
+            try
+            {
                 lista = controller.listadoCompletoPersonas_BL();
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
@@ -114,26 +139,34 @@ namespace _06_CRUDPersonas_UI.Controllers {
         /// </summary>
         /// <param name="id"></param>
         /// <returns>la vista con todos los datos de la persona</returns>
-        public ActionResult Details(int id) {
+        public ActionResult Details(int id)
+        {
 
             clsPersona persona = new clsPersona();
             mngPersonas_BL manejadoraPersonas = new mngPersonas_BL();
-            try {
+            try
+            {
                 persona = manejadoraPersonas.getPersonoID_BL(id);
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
             return View(persona);
         }
 
-        public ActionResult Edit(int id) {
+        public ActionResult Edit(int id)
+        {
 
             clsPersona persona = new clsPersona();
             mngPersonas_BL manejadoraPersonas = new mngPersonas_BL();
-            try {
+            try
+            {
                 persona = manejadoraPersonas.getPersonoID_BL(id);
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
@@ -141,14 +174,18 @@ namespace _06_CRUDPersonas_UI.Controllers {
         }
 
         [HttpPost, ActionName("Edit")]
-        public ActionResult EditPost(int id) {
+        public ActionResult EditPost(int id)
+        {
 
             int numberOfRows = -1;
             mngPersonas_BL manejadoraPersonas = new mngPersonas_BL();
-            try {
-                numberOfRows = manejadoraPersonas.insertPersona_BL(personaAInsertar);
+            try
+            {
+                //numberOfRows = manejadoraPersonas.insertPersona_BL(personaAInsertar);
                 ViewData["filasAfectadas"] = $"Filas afectadas:{numberOfRows}";
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
@@ -156,12 +193,16 @@ namespace _06_CRUDPersonas_UI.Controllers {
             clsListadoPersonas_BL controller = new clsListadoPersonas_BL();
             List<clsPersona> lista = new List<clsPersona>();
 
-            try {
+            try
+            {
                 lista = controller.listadoCompletoPersonas_BL();
-            } catch (Exception) {
+            }
+            catch (Exception)
+            {
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
             return View("listadoCompleto", lista);
         }
+    }
 }

@@ -3,7 +3,7 @@
 @{
     Layout = null;
 }
-
+<link href="~/styles.css" rel="stylesheet" type="text/css" />
 <!DOCTYPE html>
 
 <html>
@@ -11,14 +11,19 @@
     <meta name="viewport" content="width=device-width" />
     <title>listadoCompleto</title>
 </head>
+
 <body>
+    
+    <h2>Listado Completo de personas</h2>
+    <hr />
 
     <p>@ViewData["Error"]</p>
 
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("Añadir persona", "Create", null, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" })
     </p>
-    <table class="table">
+
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.idPersona)
@@ -35,7 +40,8 @@
             <th></th>
         </tr>
 
-        @foreach (var item in Model) {
+        @foreach (var item in Model)
+        {
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.idPersona)
@@ -50,9 +56,9 @@
                     @Html.DisplayFor(modelItem => item.idDepartamento)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.idPersona }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.idPersona }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.idPersona })
+                    @Html.ActionLink("Editar", "Edit", new { id = item.idPersona }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
+                    @Html.ActionLink("Detalles", "Details", new { id = item.idPersona }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.idPersona }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
                 </td>
             </tr>
         }

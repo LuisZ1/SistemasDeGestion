@@ -5,7 +5,7 @@
 }
 
 <!DOCTYPE html>
-
+<link href="~/styles.css" rel="stylesheet" type="text/css" />
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -13,70 +13,71 @@
 </head>
 <body>
     <div>
-        <h4>clsPersona</h4>
+        <h2>Detalles</h2>
         <hr />
-        <dl class="dl-horizontal">
-            <dt>
+        <dl class="demo-list-item mdl-list">
+            <dt  class =" mdl-list__item ">
                 @Html.DisplayNameFor(model => model.idPersona)
             </dt>
     
-            <dd>
+            <dd class="mdl-list__item-primary-content">
                 @Html.DisplayFor(model => model.idPersona)
             </dd>
     
-            <dt>
+            <dt class =" mdl-list__item ">
                 @Html.DisplayNameFor(model => model.nombre)
             </dt>
     
-            <dd>
+            <dd class="mdl-list__item-primary-content">
                 @Html.DisplayFor(model => model.nombre)
             </dd>
     
-            <dt>
+            <dt class =" mdl-list__item ">
                 @Html.DisplayNameFor(model => model.apellidos)
             </dt>
     
-            <dd>
+            <dd class="mdl-list__item-primary-content">
                 @Html.DisplayFor(model => model.apellidos)
             </dd>
     
-            <dt>
+            <dt class =" mdl-list__item ">
                 @Html.DisplayNameFor(model => model.fechaNacimiento)
             </dt>
     
-            <dd>
+            <dd class="mdl-list__item-primary-content">
                 @Html.DisplayFor(model => model.fechaNacimiento)
             </dd>
     
-            <dt>
+            <dt class =" mdl-list__item ">
                 @Html.DisplayNameFor(model => model.direccion)
             </dt>
     
-            <dd>
+            <dd class="mdl-list__item-primary-content">
                 @Html.DisplayFor(model => model.direccion)
             </dd>
     
-            <dt>
+            <dt class =" mdl-list__item ">
                 @Html.DisplayNameFor(model => model.telefono)
             </dt>
     
-            <dd>
+            <dd class="mdl-list__item-primary-content">
                 @Html.DisplayFor(model => model.telefono)
             </dd>
     
-            <dt>
+            <dt class =" mdl-list__item ">
                 @Html.DisplayNameFor(model => model.idDepartamento)
             </dt>
     
-            <dd>
+            <dd class="mdl-list__item-primary-content">
                 @Html.DisplayFor(model => model.idDepartamento)
             </dd>
     
         </dl>
     </div>
     <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.idPersona }) |
-        @Html.ActionLink("Back to List", "listadoCompleto")
+        @Html.ActionLink("Editar", "Edit", new { id = Model.idPersona }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
+        <br /> <br />
+        @Html.ActionLink("Volver al listado", "listadoCompleto", null, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" })
     </p>
 </body>
 </html>
