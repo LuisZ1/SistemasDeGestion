@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace _06_CRUDPersonas_DAL.management {
     public class mngPersonas_DAL {
 
-        public clsPersona getPersonaID_DAL(int id){
+        public clsPersona getPersonaID_DAL(int id) {
 
             SqlConnection miConexion;
             SqlDataReader miLector;
@@ -101,7 +101,7 @@ namespace _06_CRUDPersonas_DAL.management {
 
             //Algoritmo
             miConexion = gestoraConexion.getConnection(); //No es necesario poner try/catch porque myConnection ya lo gestiona
-            
+
             //Otra manera de declarar un parametro SQL, para intentar evitar SQL injection
             miComando.Parameters.Add("@nombre", System.Data.SqlDbType.VarChar).Value = personaAInsertar.nombre;
             miComando.Parameters.Add("@apellidos", System.Data.SqlDbType.VarChar).Value = personaAInsertar.apellidos;
@@ -117,7 +117,7 @@ namespace _06_CRUDPersonas_DAL.management {
 
             //Cerrar conexion
             gestoraConexion.closeConnection(ref miConexion);
-            
+
             return numberOfRows;
         }
 
@@ -132,6 +132,7 @@ namespace _06_CRUDPersonas_DAL.management {
             miConexion = gestoraConexion.getConnection(); //No es necesario poner try/catch porque myConnection ya lo gestiona
 
             //Otra manera de declarar un parametro SQL, para intentar evitar SQL injection
+            miComando.Parameters.Add("@idPersona", System.Data.SqlDbType.Int).Value = personaAModificar.idPersona;
             miComando.Parameters.Add("@nombre", System.Data.SqlDbType.VarChar).Value = personaAModificar.nombre;
             miComando.Parameters.Add("@apellidos", System.Data.SqlDbType.VarChar).Value = personaAModificar.apellidos;
             miComando.Parameters.Add("@fechaNacimiento", System.Data.SqlDbType.Date).Value = personaAModificar.fechaNacimiento;
@@ -139,8 +140,9 @@ namespace _06_CRUDPersonas_DAL.management {
             miComando.Parameters.Add("@direccion", System.Data.SqlDbType.VarChar).Value = personaAModificar.direccion;
             miComando.Parameters.Add("@idDepartamento", System.Data.SqlDbType.Int).Value = personaAModificar.idDepartamento;
 
-           // miComando.CommandText = "INSERT INTO [Personas] VALUES (@nombre, @apellidos, @fechaNacimiento, @telefono, @direccion, @idDepartamento)";
-           //TODO ALTER
+            // miComando.CommandText = "INSERT INTO [Personas] VALUES (@nombre, @apellidos, @fechaNacimiento, @telefono, @direccion, @idDepartamento)";
+            miComando.CommandText = "UPDATE[dbo].[Personas] SET[nombrePersona] = @nombre ,[apellidosPersona] = @apellidos ,[fechaNacimiento] = @fechaNacimiento ,[telefono] = @telefono ,[direccion] = @direccion ,[IDDepartamento] = @idDepartamento  WHERE IDPersona =@idPersona";
+            //TODO ALTER
             miComando.Connection = miConexion;
 
             numberOfRows = miComando.ExecuteNonQuery();

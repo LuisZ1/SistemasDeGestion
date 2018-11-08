@@ -174,14 +174,15 @@ namespace _06_CRUDPersonas_UI.Controllers
         }
 
         [HttpPost, ActionName("Edit")]
-        public ActionResult EditPost(int id)
+        public ActionResult EditPost(clsPersona persona)
         {
 
             int numberOfRows = -1;
             mngPersonas_BL manejadoraPersonas = new mngPersonas_BL();
+
             try
             {
-                //numberOfRows = manejadoraPersonas.insertPersona_BL(personaAInsertar);
+                numberOfRows = manejadoraPersonas.alterPersona_BL(persona);
                 ViewData["filasAfectadas"] = $"Filas afectadas:{numberOfRows}";
             }
             catch (Exception)
