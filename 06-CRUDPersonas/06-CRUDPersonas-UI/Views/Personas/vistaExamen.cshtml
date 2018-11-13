@@ -1,0 +1,64 @@
+﻿@model  _06_CRUDPersonas_UI.ViewModels.clsListadoPersonasDepartamento
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<link href="~/styles.css" rel="stylesheet" type="text/css" />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>vistaExamen</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm()) {
+
+            @Html.DropDownListFor(x => Model.idDepartamentoSeleccionado, new SelectList(Model.listaDepartamentos, "ID", "nombre"))
+
+            <input type="submit"/>
+        }
+
+        @if (Model.listaPersonasPorDepartamento.Count != 0) {
+
+            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                <tr>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.nombre)*@
+                        NOMBRE
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.apellidos)*@
+                        APELLIDOS
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.telefono)*@
+                        TELEFONO
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model.listaPersonasPorDepartamento) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.apellidos)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.telefono)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Editar", "EditOnlyTlf", new { id = item.idPersona }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        }
+
+    </div>
+</body>
+</html>

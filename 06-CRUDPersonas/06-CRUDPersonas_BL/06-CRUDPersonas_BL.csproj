@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Lists\clsListadoDepartamentos_BL.cs" />
     <Compile Include="Lists\clsListadoPersonas_BL.cs" />
     <Compile Include="Management\mngPersonas_BL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

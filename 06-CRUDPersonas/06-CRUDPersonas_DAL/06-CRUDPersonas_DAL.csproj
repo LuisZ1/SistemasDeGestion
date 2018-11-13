@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="connections\clsMyConnection.cs" />
+    <Compile Include="List\clsListadoDepartamentos_DAL.cs" />
     <Compile Include="List\clsListadoPersonasDAL.cs" />
     <Compile Include="management\mngPersonas_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

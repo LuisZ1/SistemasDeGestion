@@ -23,5 +23,15 @@ namespace _06_CRUDPersonas_BL.Lists {
 
             return lista;
         }
+
+        public List<clsPersona> listadoPersonasDepartamento_BL(int idDepartamento) {
+
+            clsListadoPersonasDAL clsListDAL = new clsListadoPersonasDAL();
+            List<clsPersona> lista = new List<clsPersona>();
+
+            lista = clsListDAL.listadoPersonasDepartamentoDAL(idDepartamento);
+
+            return lista;
+        }
     }
 }
