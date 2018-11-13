@@ -1,0 +1,4 @@
+﻿- Pon todos los Sumary
+- Pon el return nada mas crear la funcion/metodo, si devuelve algo a la vista no te olvides de pasarselo
+- Si pasas un id por parametro de ruta, recuerda que el nombre tiene de ser id
+- Poner las clases publicas

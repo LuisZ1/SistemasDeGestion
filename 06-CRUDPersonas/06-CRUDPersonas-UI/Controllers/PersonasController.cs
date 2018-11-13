@@ -34,12 +34,11 @@ namespace _06_CRUDPersonas_UI.Controllers
             return View(lista);
         }
 
-        public ActionResult vistaExamen(int? id) {
+        public ActionResult vistaExamen(int id = 0) {
             clsListadoPersonasDepartamento miViewModel = null;
+            miViewModel = new clsListadoPersonasDepartamento();
             try {
-                if (id == null) {
-                    miViewModel = new clsListadoPersonasDepartamento();
-                } else {
+                if (id != 0) {
                     clsListadoPersonas_BL gestoraPersonas = new clsListadoPersonas_BL();
                     miViewModel.listaPersonasPorDepartamento = gestoraPersonas.listadoPersonasDepartamento_BL((int)id);
                 }
@@ -49,6 +48,7 @@ namespace _06_CRUDPersonas_UI.Controllers
 
             return View(miViewModel);
         }
+
         [HttpPost]
         public ActionResult vistaExamen(clsListadoPersonasDepartamento oViewModel) {
 
@@ -267,17 +267,8 @@ namespace _06_CRUDPersonas_UI.Controllers
                 ViewData["Error"] = "Excepcion no controlada";
             }
 
-            //Para volver a la vista del listado completo
-            clsListadoPersonas_BL controller = new clsListadoPersonas_BL();
-            List<clsPersona> lista = new List<clsPersona>();
-
-            try {
-                lista = controller.listadoCompletoPersonas_BL();
-            } catch (Exception) {
-                ViewData["Error"] = "Excepcion no controlada";
-            }
-
-            return View("vistaExamen", lista);
+            ViewData["MensajeFurtivo"] = "Fila guardada";
+            return View(persona);
         }
     }
 }

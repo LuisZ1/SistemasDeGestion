@@ -29,6 +29,7 @@
             @Html.LabelFor(model => model.idPersona, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DisplayFor(model => model.idPersona, new { htmlAttributes = new { @class = "mdl-textfield__input" } })
+                @Html.HiddenFor(model => model.idPersona)
                 @Html.ValidationMessageFor(model => model.idPersona, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -37,6 +38,7 @@
             @Html.LabelFor(model => model.nombre, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DisplayFor(model => model.nombre, new { htmlAttributes = new { @class = "mdl-textfield__input" } })
+                @Html.HiddenFor(model => model.nombre)
                 @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -45,6 +47,7 @@
             @Html.LabelFor(model => model.apellidos, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DisplayFor(model => model.apellidos, new { htmlAttributes = new { @class = "mdl-textfield__input" } })
+                @Html.HiddenFor(model => model.apellidos)
                 @Html.ValidationMessageFor(model => model.apellidos, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -53,6 +56,7 @@
             @Html.LabelFor(model => model.fechaNacimiento, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DisplayFor(model => model.fechaNacimiento, new { htmlAttributes = new { @class = "mdl-textfield__input" } })
+                @Html.HiddenFor(model => model.fechaNacimiento)
                 @Html.ValidationMessageFor(model => model.fechaNacimiento, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -61,6 +65,7 @@
             @Html.LabelFor(model => model.direccion, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DisplayFor(model => model.direccion, new { htmlAttributes = new { @class = "mdl-textfield__input" } })
+                @Html.HiddenFor(model => model.direccion)
                 @Html.ValidationMessageFor(model => model.direccion, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -77,9 +82,12 @@
             @Html.LabelFor(model => model.idDepartamento, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DisplayFor(model => model.idDepartamento, new { htmlAttributes = new { @class = "mdl-textfield__input" } })
+                @Html.HiddenFor(model => model.idDepartamento)
                 @Html.ValidationMessageFor(model => model.idDepartamento, "", new { @class = "text-danger" })
             </div>
         </div>
+
+        @ViewData["MensajeFurtivo"]
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
@@ -90,8 +98,8 @@
     }
     
     <div>
-        <br />
-        @Html.ActionLink("Volver al listado", "vistaExamen", null, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" })
+        <br/>
+        @Html.ActionLink("Volver al listado", "vistaExamen", new { id = Model.idDepartamento }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" })
     </div>
 </body>
 </html>

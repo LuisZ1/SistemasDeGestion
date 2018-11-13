@@ -81,6 +81,16 @@
             </div>
         </div>
 
+        <div class="mdl-textfield mdl-js-textfield">
+            Departamento
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.idDepartamento, new { htmlAttributes = new { @class = "mdl-textfield__input" } })*@
+                @Html.DropDownListFor(x => Model.idDepartamentoSeleccionado, new SelectList(Model.listaDepartamentos, "ID", "nombre"))
+                @*@Html.ValidationMessageFor(model => model.idDepartamento, "", new { @class = "text-danger" })*@
+            </div>
+        </div>
+        
+
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Guardar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" />
@@ -95,3 +105,6 @@
     </div>
 </body>
 </html>
+
+@*vista / modelo / controlador / bl / dal
+front                              back*@
