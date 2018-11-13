@@ -35,12 +35,13 @@ namespace _06_CRUDPersonas_UI.Controllers
         }
 
         public ActionResult vistaExamen(int id = 0) {
-            clsListadoPersonasDepartamento miViewModel = null;
-            miViewModel = new clsListadoPersonasDepartamento();
+            clsListadoPersonasDepartamento miViewModel = new clsListadoPersonasDepartamento();
+
             try {
                 if (id != 0) {
                     clsListadoPersonas_BL gestoraPersonas = new clsListadoPersonas_BL();
                     miViewModel.listaPersonasPorDepartamento = gestoraPersonas.listadoPersonasDepartamento_BL((int)id);
+                    miViewModel.idDepartamentoSeleccionado = id;
                 }
             } catch (Exception) {
                 ViewData["Error"] = "Excepcion no controlada";
@@ -53,10 +54,6 @@ namespace _06_CRUDPersonas_UI.Controllers
         public ActionResult vistaExamen(clsListadoPersonasDepartamento oViewModel) {
 
             clsListadoPersonas_BL controller = new clsListadoPersonas_BL();
-            //clsListadoDepartamentos_BL controllerDepartamentos = new clsListadoDepartamentos_BL();
-
-            //clsListadoPersonasDepartamento miViewModel = new clsListadoPersonasDepartamento();
-
             try {
 
                 oViewModel.listaPersonasPorDepartamento = controller.listadoPersonasDepartamento_BL(oViewModel.idDepartamentoSeleccionado);

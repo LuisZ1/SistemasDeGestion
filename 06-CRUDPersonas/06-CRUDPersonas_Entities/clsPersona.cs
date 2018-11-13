@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace _06_CRUDPersonas_Entities {
     public class clsPersona
     {
-        #region atributosYPropiedades
+        #region atributos Y Propiedades
 
         public int idPersona { get; set; }
 
@@ -25,6 +25,17 @@ namespace _06_CRUDPersonas_Entities {
 
 
         #region constructores
+
+        public clsPersona()
+        {
+            this.idPersona = 0;
+            this.nombre = "";
+            this.apellidos = "";
+            this.fechaNacimiento = new DateTime();
+            this.direccion = "";
+            this.telefono = "";
+            this.idDepartamento = 0;
+        }
 
         public clsPersona(int idPersona, String nombre, String apellidos, DateTime fechaNacimiento, String direccion, String telefono, int idDepartamento) {
 
@@ -49,17 +60,6 @@ namespace _06_CRUDPersonas_Entities {
 
         }
 
-        public clsPersona() {
-
-            this.idPersona = 0;
-            this.nombre = "";
-            this.apellidos = "";
-            this.fechaNacimiento = new DateTime();
-            this.direccion = "";
-            this.telefono = "";
-            this.idDepartamento = 0;
-
-        }
 
         #endregion
 

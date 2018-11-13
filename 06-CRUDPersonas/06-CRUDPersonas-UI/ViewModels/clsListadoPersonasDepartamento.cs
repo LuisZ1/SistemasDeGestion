@@ -16,9 +16,8 @@ namespace _06_CRUDPersonas_UI.ViewModels {
             this.listaDepartamentos = listDepartamentos;
             this.listaPersonasPorDepartamento = listaPersonasPorDepartamento;
         }
-
+        
         public clsListadoPersonasDepartamento() {
-            //Rellenar lista departamentos desde la BL
             clsListadoDepartamentos_BL gestoraDepartamentos = new clsListadoDepartamentos_BL();
             this.listaDepartamentos = gestoraDepartamentos.listadoDepartamentos_BL();
             listaPersonasPorDepartamento = new List<clsPersona>();
