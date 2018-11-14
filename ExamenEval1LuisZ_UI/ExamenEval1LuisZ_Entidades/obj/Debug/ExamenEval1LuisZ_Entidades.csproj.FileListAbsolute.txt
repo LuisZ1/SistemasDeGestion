@@ -1,0 +1,5 @@
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_Entidades\bin\Debug\ExamenEval1LuisZ_Entidades.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_Entidades\bin\Debug\ExamenEval1LuisZ_Entidades.pdb
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_Entidades\obj\Debug\ExamenEval1LuisZ_Entidades.csproj.CoreCompileInputs.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_Entidades\obj\Debug\ExamenEval1LuisZ_Entidades.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_Entidades\obj\Debug\ExamenEval1LuisZ_Entidades.pdb

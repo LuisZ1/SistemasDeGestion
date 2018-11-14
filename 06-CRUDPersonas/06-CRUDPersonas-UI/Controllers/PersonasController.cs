@@ -53,10 +53,6 @@ namespace _06_CRUDPersonas_UI.Controllers
         public ActionResult vistaExamen(clsListadoPersonasDepartamento oViewModel) {
 
             clsListadoPersonas_BL controller = new clsListadoPersonas_BL();
-            //clsListadoDepartamentos_BL controllerDepartamentos = new clsListadoDepartamentos_BL();
-
-            //clsListadoPersonasDepartamento miViewModel = new clsListadoPersonasDepartamento();
-
             try {
 
                 oViewModel.listaPersonasPorDepartamento = controller.listadoPersonasDepartamento_BL(oViewModel.idDepartamentoSeleccionado);

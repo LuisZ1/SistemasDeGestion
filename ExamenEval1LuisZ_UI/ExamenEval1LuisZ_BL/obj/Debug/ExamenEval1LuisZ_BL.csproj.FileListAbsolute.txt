@@ -1,0 +1,11 @@
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\bin\Debug\ExamenEval1LuisZ_BL.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\bin\Debug\ExamenEval1LuisZ_BL.pdb
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\bin\Debug\ExamenEval1LuisZ_DAL.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\bin\Debug\ExamenEval1LuisZ_Entidades.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\bin\Debug\ExamenEval1LuisZ_DAL.pdb
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\bin\Debug\ExamenEval1LuisZ_Entidades.pdb
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\obj\Debug\ExamenEval1LuisZ_BL.csprojAssemblyReference.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\obj\Debug\ExamenEval1LuisZ_BL.csproj.CoreCompileInputs.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\obj\Debug\ExamenEval1LuisZ_BL.csproj.CopyComplete
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\obj\Debug\ExamenEval1LuisZ_BL.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\ExamenEval1LuisZ_UI\ExamenEval1LuisZ_BL\obj\Debug\ExamenEval1LuisZ_BL.pdb

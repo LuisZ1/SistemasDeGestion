@@ -42,12 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Lists\listCategoria_BL.cs" />
+    <Compile Include="Lists\listPersonajes_BL.cs" />
+    <Compile Include="Manage\mngCategoria_BL.cs" />
+    <Compile Include="Manage\mngPersonajes_BL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Lists\" />
-    <Folder Include="Manage\" />
+    <ProjectReference Include="..\ExamenEval1LuisZ_DAL\ExamenEval1LuisZ_DAL.csproj">
+      <Project>{280c8c02-0925-4d3a-8084-b8e91ab73346}</Project>
+      <Name>ExamenEval1LuisZ_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExamenEval1LuisZ_Entidades\ExamenEval1LuisZ_Entidades.csproj">
+      <Project>{4f1032cb-d634-4012-bccf-5535f04ab7b5}</Project>
+      <Name>ExamenEval1LuisZ_Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,129 @@
+﻿@model ExamenEval1LuisZ_UI.Models.ViewModels.clsListadoPersonajesCategoria
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm()) {
+
+        @ViewData["Error"]
+
+        @Html.DropDownListFor(x => Model.idPersonajeSeleccionado, new SelectList(Model.listadoPersonajes, "idPersonaje", "nombre"))
+
+        <input type="submit" value="Editar" name="boton" />
+
+        if (Model.idPersonajeSeleccionado != -1) {
+
+
+
+            <div class="form-horizontal">
+                <h2>Editando a @Html.DisplayFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].nombre) </h2>
+
+
+
+                <hr />
+                @* No se como cambiar la url de la foto, supongo que será concanenando las cadenas de ruta y el nombre *@
+                @*<img src=["~/Assets/"+model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].nombre+".png"] height="100" width="100" role="presentation" aria-hidden="true">*@
+                <img src="~/Assets/@(Model.personajeSeleccionado.nombre).png" height="100" width="100" role="presentation" aria-hidden="true">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="col-md-10">
+                        NOMBRE:
+                        @Html.DisplayFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].nombre, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.HiddenFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].nombre)
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].nombre, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        ALIAS:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].alias, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].alias, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        VIDA:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].vida, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].vida, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        REGENERACION:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].regeneracion, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].regeneracion, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        DAÑO:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].danno, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].danno, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        ARMADURA:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].armadura, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].armadura, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        VELOCIDAD DE ATAQUE:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].velAtaque, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].velAtaque, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        RESISTENCIA:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].resistencia, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].resistencia, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        VELOCIDAD DE MOVIMIENTO:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].velMovimiento, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].velMovimiento, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        ID DE CATEGORÍA:
+                        @Html.EditorFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].idCategoria, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.listadoPersonajes[Model.idPersonajeSeleccionado - 1].idCategoria, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Guardar" class="btn btn-default" name="boton" />
+                    </div>
+                </div>
+            </div>
+
+            @*@Html.ActionLink("Guardar", "Index", new { id = Model. }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })*@
+        }
+    }
+</body>
+</html>
