@@ -34,10 +34,10 @@ namespace ExamenEval1LuisZ_DAL.connections
 
         public clsMyConnection()
         {
-            this.server = "serverpersonasdamlz.database.windows.net";
-            this.dataBase = "personasDB";
-            this.user = "Prueba";
-            this.pass = "123qweasd!";
+            this.server = "localhost";
+            this.dataBase = "lol";
+            this.user = "prueba2";
+            this.pass = "123";
 
         }
         //Con parámetros por si quisiera cambiar las conexiones
