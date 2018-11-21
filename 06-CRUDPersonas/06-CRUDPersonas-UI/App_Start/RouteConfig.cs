@@ -18,7 +18,8 @@ namespace _06_CRUDPersonas_UI
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                //defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Personas", action = "listadoCompleto", id = UrlParameter.Optional }
             );
         }
     }
