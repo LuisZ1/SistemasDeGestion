@@ -1,0 +1,6 @@
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\07-ApiRest-Personas\07-ApiRest-Personas_Entities\bin\Release\07-ApiRest-Personas_Entities.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\07-ApiRest-Personas\07-ApiRest-Personas_Entities\bin\Release\07-ApiRest-Personas_Entities.pdb
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\07-ApiRest-Personas\07-ApiRest-Personas_Entities\obj\Release\07-ApiRest-Personas_Entities.csprojAssemblyReference.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\07-ApiRest-Personas\07-ApiRest-Personas_Entities\obj\Release\07-ApiRest-Personas_Entities.csproj.CoreCompileInputs.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\07-ApiRest-Personas\07-ApiRest-Personas_Entities\obj\Release\07-ApiRest-Personas_Entities.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\07-ApiRest-Personas\07-ApiRest-Personas_Entities\obj\Release\07-ApiRest-Personas_Entities.pdb

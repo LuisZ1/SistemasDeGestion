@@ -32,7 +32,33 @@ namespace _07_ApiRest_Personas_API.Controllers
             return oPersona;
         }
 
-        public void Post() {
+        /// <summary>
+        /// Verbo post para poder actualizar una persona
+        /// </summary>
+        /// <param name="persona"></param>
+        public void Post([FromBody]clsPersona persona) {
+            mngPersonas_BL gestora = new mngPersonas_BL();
+            gestora.insertPersona_BL(persona);
+        }
+
+        /// <summary>
+        /// Verbo put para insertar una persona
+        /// </summary>
+        /// <param name="persona"></param>
+        public void Put([FromBody]clsPersona persona) {
+            mngPersonas_BL gestora = new mngPersonas_BL();
+            gestora.alterPersona_BL(persona);
+
+
+        }
+
+        /// <summary>
+        /// Verbo delete para poder borrar una persona en concreto
+        /// </summary>
+        /// <param name="id"></param>
+        public void Delete(int id) {
+            mngPersonas_BL gestora = new mngPersonas_BL();
+            gestora.dropPersonoID_BL(id);
 
         }
 
