@@ -32,5 +32,9 @@ namespace _07_ApiRest_Personas_API.Controllers
             return oPersona;
         }
 
+        public void Post() {
+
+        }
+
     }
 }
