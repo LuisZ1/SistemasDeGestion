@@ -7,3 +7,14 @@ D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPer
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\obj\Release\06-CRUDPersonas_DAL.csproj.CopyComplete
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\obj\Release\06-CRUDPersonas_DAL.dll
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\obj\Release\06-CRUDPersonas_DAL.pdb
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.Mvc.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.WebPages.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.WebPages.Razor.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.Razor.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.WebPages.Deployment.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.Mvc.xml
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.WebPages.xml
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.WebPages.Razor.xml
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.Razor.xml
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\06-CRUDPersonas\06-CRUDPersonas_DAL\bin\Release\System.Web.WebPages.Deployment.xml
