@@ -47,14 +47,8 @@ D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-Hell
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\roslyn\vbc.rsp
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\roslyn\VBCSCompiler.exe
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\roslyn\VBCSCompiler.exe.config
-D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.csprojAssemblyReference.cache
-D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.csproj.CoreCompileInputs.cache
-D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.csproj.CopyComplete
-D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.dll
-D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.pdb
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\Antlr3.Runtime.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\Microsoft.Web.Infrastructure.dll
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\Newtonsoft.Json.dll
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\System.Web.Helpers.dll
@@ -74,3 +68,9 @@ D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-Hell
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\System.Web.WebPages.xml
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\System.Web.WebPages.Deployment.xml
 D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\System.Web.WebPages.Razor.xml
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.csprojAssemblyReference.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.csproj.CoreCompileInputs.cache
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.csproj.CopyComplete
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.dll
+D:\LuisZ 18-19\2018-19\REPOSITORIOS\SistemasDeGestion\08-HelloWorld-AJAX\08-HelloWorld-AJAX\obj\Debug\08-HelloWorld-AJAX.pdb
