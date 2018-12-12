@@ -1,5 +1,5 @@
 ﻿<link href="../styles.css" rel="stylesheet" />
-<script src="../Scripts/JavaScript.js"></script>
+<script src="../Scripts/JavaScriptv2.js"></script>
 
 <html>
 <head>
@@ -8,13 +8,37 @@
 </head>
 <body>
     <h3>Listado de personas</h3>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">NUEVO</button>
-    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" >
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" id="btnNuevo" data-toggle="modal" data-target="#myModal" style="position:fixed ;bottom:40px; right:40px;">
         <i class="material-icons">+</i>
     </button>
-    <p></p>
+    <p />
 
-    <p id="demo"></p>
+    <p id="demo" />
+    <div id="divTablaPersona" />
+
+    <div id="myModal" class="modal" style="display:none">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <div>
+                        <input class="mdl-textfield__input" type="text" id="inputNombre">
+                        <label class="mdl-textfield__label" for="inputNombre">Nombre...</label>
+                    </div>
+                    <div>
+                        <input class="mdl-textfield__input" type="text" id="inputApellidos">
+                        <label class="mdl-textfield__label" for="inputApellidos">Apellidos...</label>
+                    </div>
+                    <div>
+                       <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Guardar</button>-->
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
 
 </body>
 </html>
