@@ -22,17 +22,31 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <form action="#">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <div>
+                <div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" id="inputNombre">
-                        <label class="mdl-textfield__label" for="inputNombre">Nombre...</label>
+                        <label class="mdl-textfield__label" for="inputNombre">Nombre</label>
                     </div>
-                    <div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" id="inputApellidos">
-                        <label class="mdl-textfield__label" for="inputApellidos">Apellidos...</label>
+                        <label class="mdl-textfield__label" for="inputApellidos">Apellidos</label>
                     </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="inputFechaNacimiento">
+                        <label class="mdl-textfield__label" for="inputFechaNacimiento">F nac</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="inputDireccion">
+                        <label class="mdl-textfield__label" for="inputDireccion">Direccion</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inputTelefono">
+                        <label class="mdl-textfield__label" for="inputTelefono">Teléfono</label>
+                        <span class="mdl-textfield__error">Input is not a number!</span>
+                    </div>
+
                     <div>
-                       <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Guardar</button>-->
+                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Guardar</button>
                     </div>
                 </div>
             </form>
