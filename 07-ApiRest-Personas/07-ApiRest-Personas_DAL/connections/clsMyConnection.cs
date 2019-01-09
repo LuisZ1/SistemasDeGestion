@@ -34,8 +34,8 @@ namespace _07_ApiRest_Personas_DAL.connections
 
         public clsMyConnection()
         {
-            this.server = "serverpersonasdamlz.database.windows.net";
-            this.dataBase = "personasDB";
+            this.server = "apipersonas.database.windows.net";
+            this.dataBase = "apipersonas";
             this.user = "Prueba";
             this.pass = "123qweasd!";
 
