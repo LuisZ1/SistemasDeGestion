@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "d:\\LuisZ 18-19\\2018-19\\REPOSITORIOS\\SistemasDeGestion\\06-CRUDPersonas\\06-CRUDPersonas_DAL\\06-CRUDPersonas_DAL.csproj",
+  "TargetFramework": "v4.6.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

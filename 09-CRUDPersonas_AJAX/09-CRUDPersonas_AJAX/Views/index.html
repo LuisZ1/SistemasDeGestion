@@ -1,0 +1,58 @@
+﻿<link href="../styles.css" rel="stylesheet" />
+<script src="../Scripts/JavaScriptv2.js"></script>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+</head>
+<body>
+    <h3>Listado de personas</h3>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" id="btnNuevo" data-toggle="modal" data-target="#myModal" style="position:fixed ;bottom:40px; right:40px;">
+        <i class="material-icons">+</i>
+    </button>
+    <p />
+
+    <p id="demo" />
+    <div id="divTablaPersona" />
+
+    <div id="myModal" class="modal" style="display:none">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#">
+                <div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="inputNombre">
+                        <label class="mdl-textfield__label" for="inputNombre">Nombre</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="inputApellidos">
+                        <label class="mdl-textfield__label" for="inputApellidos">Apellidos</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="inputFechaNacimiento">
+                        <label class="mdl-textfield__label" for="inputFechaNacimiento">F nac</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="inputDireccion">
+                        <label class="mdl-textfield__label" for="inputDireccion">Direccion</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inputTelefono">
+                        <label class="mdl-textfield__label" for="inputTelefono">Teléfono</label>
+                        <span class="mdl-textfield__error">Input is not a number!</span>
+                    </div>
+
+                    <div>
+                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

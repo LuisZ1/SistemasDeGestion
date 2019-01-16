@@ -1,0 +1,72 @@
+﻿@model IEnumerable<_06_CRUDPersonas_Entities.clsPersona>
+
+@{
+    Layout = null;
+}
+<link href="~/styles.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>listadoCompleto</title>
+</head>
+
+<body>
+    
+    <h2>Listado Completo de personas</h2>
+    <hr />
+
+    <p>@ViewData["Error"]</p>
+
+    <p>
+        @Html.ActionLink("Añadir persona", "Create", null, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" })
+        @Html.ActionLink("Vista teléfono", "vistaExamen", null, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
+    </p>
+
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idPersona)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idDepartamento)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idPersona)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apellidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idDepartamento)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.idPersona }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
+                    @Html.ActionLink("Detalles", "Details", new { id = item.idPersona }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.idPersona }, new { @class = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <p>@ViewData["filasAfectadas"]</p>
+
+</body>
+</html>
