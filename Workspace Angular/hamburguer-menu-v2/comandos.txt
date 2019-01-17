@@ -1,0 +1,5 @@
+añadir material a un proyecto	ng add @angular/material
+
+crear navMenu 			ng generate @angular/material:material-nav --name=main-nav
+
+	incluir enlaces enrutados en nuestro menu, en vez de href, ponemos Routelink
