@@ -10,11 +10,16 @@ import { Order } from 'src/app/models/order';
 export class OrderDetailsComponent implements OnInit {
 
   miOrder : Order ;
+  public milistaProductos = [];
 
   constructor(public miOrderService: OrderService) { }
 
   ngOnInit() {
-    this.miOrder = this.miOrderService.getOrder();
+    this.miOrderService.getOrderAPI()
+      .subscribe(data => this.miOrder = data);
+
+     // this.milistaProductos = this.miOrder.listaProductos;
+
   }
 
 }

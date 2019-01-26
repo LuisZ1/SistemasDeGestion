@@ -30,3 +30,12 @@
         </tr>
     </table>
 
+    <div>
+
+          <ul>
+            <li *ngFor="let producto of {{miOrder.listaProductos}}">
+                {{producto.nombre}}
+            </li>
+          </ul>
+
+    </div>

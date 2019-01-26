@@ -1,3 +1,5 @@
+import { Product } from './product';
+
 export class Order {
 
     id: number;
@@ -6,5 +8,5 @@ export class Order {
     fechaPedido: string;
     fechaEntrega: string;
     totalPedido: number;
-
+    listaProductos : Product[];
 }

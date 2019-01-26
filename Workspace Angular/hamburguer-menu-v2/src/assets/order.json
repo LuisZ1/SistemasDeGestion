@@ -1,0 +1,8 @@
+{   
+    "id": 1, 
+    "idCliente": 1,
+    "nombreVendedor": "rafalito", 
+    "fechaPedido": "12/12/2012",
+    "fechaEntrega": "20/12/2018", 
+    "totalPedido": 562  
+}

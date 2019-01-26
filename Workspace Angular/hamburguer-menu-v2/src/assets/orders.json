@@ -1,0 +1,50 @@
+[
+    {   
+        "id": 1, 
+        "idCliente": 1,
+        "nombreVendedor": "rafalito", 
+        "fechaPedido": "12/12/2012",
+        "fechaEntrega": "20/12/2018", 
+        "totalPedido": 562  
+    },
+    {   
+        "id": 2, 
+        "idCliente": 2,
+        "nombreVendedor": "oscar", 
+        "fechaPedido": "12/12/2012",
+        "fechaEntrega": "20/12/2018", 
+        "totalPedido": 360  
+    },
+    {   
+        "id": 3, 
+        "idCliente": 1,
+        "nombreVendedor": "rafalito", 
+        "fechaPedido": "12/12/2012",
+        "fechaEntrega": "20/12/2018", 
+        "totalPedido": 23  
+    },
+    {   
+        "id": 4, 
+        "idCliente": 3,
+        "nombreVendedor": "oscar", 
+        "fechaPedido": "12/12/2012",
+        "fechaEntrega": "20/12/2018", 
+        "totalPedido": 248  
+    },
+    {   
+        "id": 5, 
+        "idCliente": 2,
+        "nombreVendedor": "rafalito", 
+        "fechaPedido": "12/12/2012",
+        "fechaEntrega": "20/12/2018", 
+        "totalPedido": 123  
+    },
+    {   
+        "id": 6, 
+        "idCliente": 2,
+        "nombreVendedor": "oscar", 
+        "fechaPedido": "12/12/2012",
+        "fechaEntrega": "20/12/2018", 
+        "totalPedido": 123  
+    }
+]
