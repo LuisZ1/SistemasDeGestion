@@ -1,0 +1,42 @@
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    padding-left: 20px;
+}
+
+.div-home{
+    display: table;
+    text-align: center;
+
+    /* modificable */
+    border-width:2px;
+    border-style:solid;
+    border-color:black;  
+}
+
+.div-home .my-div-home-item {
+    display: inline-block;
+    position: relative;
+
+    /* modificable */
+    padding: 8px;
+    margin: 16px;
+    width: 200px;
+    height: 200px;
+    background-color: #E91E63;
+}
+
+.div-home .my-div-home-item .my-div-home-item-text {
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+    
+    /* modificable */
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+}

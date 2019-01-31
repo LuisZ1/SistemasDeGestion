@@ -10,16 +10,18 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 
 //Componentes
 import { MainNavComponent } from './components/main-nav/main-nav.component';
-import { OrderDetailsComponent } from './components/order-details/order-details.component';
+//import { OrderDetailsComponent } from './components/order-details/order-details.component';
 
 //Servicios
 import { ProductService } from './services/product.service';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
-    OrderDetailsComponent
+    //OrderDetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
